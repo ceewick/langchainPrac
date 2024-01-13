@@ -45,4 +45,4 @@ for i in data:
 
 df=pd.DataFrame(lifetimeStatsDict)#['name'])
 # df.to_csv('lifetimeStats.csv', sep=',')
-pprint(df)
+# pprint(df)

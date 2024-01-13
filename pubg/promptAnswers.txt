@@ -1,0 +1,346 @@
+prompt_1 = f'''
+Your task is to summarize the below lifetimeStats dictionary. \
+This for a videogame Pubg.\
+The csv file is below, deliminates by triple "#".
+
+Except for the first column, each column are the players name. \ 
+The first column are the categories of different metrics/stats.
+
+Please compute and summarize the below stats for each player:
+1. kills/roundsPlayed: <compare answer>
+2. losses/wins: <compare answer>
+3. damage dealt: <compare damage dealt>
+4. revives/roundsPlayed: <compute and share answer>
+
+Finally, summarize the lifetime stats for each player, \
+which is each column except the first column (first column are metrics).
+
+The dictionary data is ###{lifetimeStatsDict}###
+'''
+
+prompt_1 response:
+>>> 
+The summary of the lifetimeStats dictionary for each player is as follows:
+
+1. SnpCrckPop:
+- kills/roundsPlayed: 0.404
+- losses/wins: 16.77
+- damage dealt: 166057.44
+- revives/roundsPlayed: 0.233
+
+2. ToucanSamXX:
+- kills/roundsPlayed: 0.918
+- losses/wins: 15.05
+- damage dealt: 550857.56
+- revives/roundsPlayed: 0.275
+
+3. InMyOffice:
+- kills/roundsPlayed: 1.35
+- losses/wins: 10.49
+- damage dealt: 574360.75
+- revives/roundsPlayed: 0.299
+
+4. UNluckeCharm:
+- kills/roundsPlayed: 0.879
+- losses/wins: 11.33
+- damage dealt: 191232.5
+- revives/roundsPlayed: 0.188
+
+5. XCapnCrunchx739:
+- kills/roundsPlayed: 0.993
+- losses/wins: 11.79
+- damage dealt: 515250.38
+- revives/roundsPlayed: 0.458
+
+6. EatsWheaties:
+- kills/roundsPlayed: 0.638
+- losses/wins: 20.82
+- damage dealt: 227226.61
+- revives/roundsPlayed: 0.154
+
+7. xHoneySmacks:
+- kills/roundsPlayed: 0.609
+- losses/wins: 22.93
+- damage dealt: 82619.195
+- revives/roundsPlayed: 0.199
+
+Summary of lifetime stats for each player (excluding the first column):
+- SnpCrckPop: {'assists': 636, 'boosts': 3768, 'dBNOs': 1051, 'dailyKills': 1, 'dailyWins': 1, 'damageDealt': 166057.44, 'days': 511, 'headshotKills': 206, 'heals': 5292, 'killPoints': 0, 'kills': 987, 'longestKill': 505.25568, 'longestTimeSurvived': 2040.027, 'losses': 2330, 'maxKillStreaks': 3, 'mostSurvivalTime': 2040.027, 'rankPoints': 0, 'rankPointsTitle': '', 'revives': 569, 'rideDistance': 6672479.5, 'roadKills': 5, 'roundMostKills': 6, 'roundsPlayed': 2441, 'suicides': 65, 'swimDistance': 18647.012, 'teamKills': 59, 'timeSurvived': 2425368.5, 'top10s': 1090, 'vehicleDestroys': 42, 'walkDistance': 2738349, 'weaponsAcquired': 12141, 'weeklyKills': 1, 'weeklyWins': 1, 'winPoints': 0, 'wins': 139, 'id': 'account.faac68b108964de6833b57d91f5bf250'}
+- ToucanSamXX: {'assists': 1709, 'boosts': 9636, 'dBNOs': 3685, 'dailyKills': 2, 'dailyWins': 1, 'damageDealt': 550857.56, 'days': 1004, 'headshotKills': 734, 'heals': 10535, 'killPoints': 0, 'kills': 3913, 'longestKill': 561.98883, 'longestTimeSurvived': 2185.694, 'losses': 4019, 'maxKillStreaks': 4, 'mostSurvivalTime': 2185.694, 'rankPoints': 0, 'rankPointsTitle': '', 'revives': 1175, 'rideDistance': 14090738, 'roadKills': 34, 'roundMostKills': 9, 'roundsPlayed': 4265, 'suicides': 193, 'swimDistance': 40442.89, 'teamKills': 223, 'timeSurvived': 4569401, 'top10s': 2037, 'vehicleDestroys': 241, 'walkDistance': 5461600, 'weaponsAcquired': 23367, 'weeklyKills': 8, 'weeklyWins': 2, 'winPoints': 0, 'wins': 267, 'id': 'account.3f86f1e71b70487e866b3d201b83032c'}
+- InMyOffice: {'assists': 1262, 'boosts': 8679, 'dBNOs': 3580, 'dailyKills': 7, 'dailyWins': 1, 'damageDealt': 574360.75, 'days': 613, 'headshotKills': 800, 'heals': 4757, 'killPoints': 0, 'kills': 3573, 'longestKill': 588.3855, 'longestTimeSurvived': 2176, 'losses': 2426, 'maxKillStreaks': 5, 'mostSurvivalTime': 2176, 'rankPoints': 0, 'rankPointsTitle': '', 'revives': 791, 'rideDistance': 7642716, 'roadKills': 50, 'roundMostKills': 18, 'roundsPlayed': 2647, 'suicides': 97, 'swimDistance': 14422.704, 'teamKills': 49, 'timeSurvived': 2899306, 'top10s': 1364, 'vehicleDestroys': 90, 'walkDistance': 2908926, 'weaponsAcquired': 14957, 'weeklyKills': 16, 'weeklyWins': 2, 'winPoints': 0, 'wins': 231, 'id': 'account.c29966f76c8c4fa092330d79e5f6714e'}
+- UNluckeCharm: {'assists': 585, 'boosts': 3629, 'dBNOs': 1257, 'dailyKills': 6, 'dailyWins': 0, 'damageDealt': 191232.5, 'days': 540, 'headshotKills': 244, 'heals': 2922, 'killPoints': 0, 'kills': 1357, 'longestKill': 474.0125, 'longestTimeSurvived': 2043.892, 'losses': 1428, 'maxKillStreaks': 4, 'mostSurvivalTime': 2043.892, 'rankPoints': 0, 'rankPointsTitle': '', 'revives': 290, 'rideDistance': 4533687.5, 'roadKills': 9, 'roundMostKills': 10, 'roundsPlayed': 1544, 'suicides': 57, 'swimDistance': 13883.431, 'teamKills': 63, 'timeSurvived': 1634428.9, 'top10s': 763, 'vehicleDestroys': 36, 'walkDistance':
+
+****************************
+prompt_2 = f'''
+Your task is to summarize the strengths and weaknesses of each player \
+in the below lifetimeStats dictionary. This for a videogame Pubg.
+
+The python dictionary is below, deliminates by triple "#".
+
+The first column are the categories of different metrics/stats to compare.
+Except for the first column, the other columns start with the players name, \
+followed by their stats for each stat listed in first column.  
+
+In a funny way, summarize each player by their stats, and share their \
+strengths/weaknesses. 
+
+The dictionary data is ###{lifetimeStatsDict}###
+'''
+
+prompt_2 response:
+>>>
+SnpCrckPop:
+Strengths:
+- Has a high number of assists (636), indicating good teamwork and support for teammates.
+- Has a high number of boosts (3768), indicating good resource management and ability to sustain health and speed.
+- Has a high number of headshot kills (206), indicating good aim and accuracy.
+- Has a high number of heals (5292), indicating good self-sustainability and ability to recover health.
+- Has a high number of revives (569), indicating good teamwork and willingness to help teammates.
+
+Weaknesses:
+- Has a low number of daily kills (1), indicating a lack of consistent aggression and engagement in fights.
+- Has a low number of daily wins (1), indicating a lack of consistent success in matches.
+- Has a low number of road kills (5), indicating a lack of effective vehicle combat skills.
+- Has a low number of rounds played (2441), indicating a lower level of experience compared to other players.
+- Has a low number of weekly kills (1) and weekly wins (1), indicating a lack of consistent performance over time.
+
+ToucanSamXX:
+Strengths:
+- Has a high number of assists (1709), indicating good teamwork and support for teammates.
+- Has a high number of boosts (9636), indicating good resource management and ability to sustain health and speed.
+- Has a high number of headshot kills (734), indicating good aim and accuracy.
+- Has a high number of heals (10535), indicating good self-sustainability and ability to recover health.
+- Has a high number of revives (1175), indicating good teamwork and willingness to help teammates.
+
+Weaknesses:
+- Has a low number of daily kills (2), indicating a lack of consistent aggression and engagement in fights.
+- Has a low number of daily wins (1), indicating a lack of consistent success in matches.
+- Has a low number of road kills (34), indicating a lack of effective vehicle combat skills.
+- Has a low number of rounds played (4265), indicating a lower level of experience compared to other players.
+- Has a low number of weekly kills (8) and weekly wins (2), indicating a lack of consistent performance over time.
+
+InMyOffice:
+Strengths:
+- Has a high number of assists (1262), indicating good teamwork and support for teammates.
+- Has a high number of boosts (8679), indicating good resource management and ability to sustain health and speed.
+- Has a high number of headshot kills (800), indicating good aim and accuracy.
+- Has a high number of heals (4757), indicating good self-sustainability and ability to recover health.
+- Has a high number of revives (791), indicating good teamwork and willingness to help teammates.
+
+Weaknesses:
+- Has a low number of daily kills (7), indicating a lack of consistent aggression and engagement in fights.
+- Has a low number of daily wins (1), indicating a lack of consistent success in matches.
+- Has a low number of road kills (50), indicating a lack of effective vehicle combat skills.
+- Has a low number of rounds played (2647), indicating a lower level of experience compared to other players.
+- Has a low number of weekly kills (16) and weekly wins (2), indicating a lack of consistent performance over time.
+
+UNluckeCharm:
+Strengths:
+- Has a high number of assists (585), indicating good teamwork and support for teammates.
+- Has a high number of boosts (3629), indicating good resource management and ability to sustain health and speed.
+- Has a high number of headshot kills (244), indicating good aim and accuracy.
+- Has a high number of heals (2922), indicating good self-sustainability and ability to recover health.
+- Has a high number of revives (290), indicating good teamwork and willingness to help teammates.
+
+Weaknesses:
+- Has a low number of daily kills (6), indicating a lack of consistent aggression and engagement in fights.
+- Has a low number of daily wins (0), indicating a lack of consistent success in matches.
+- Has a low number of road kills (9), indicating a lack of effective vehicle combat skills.
+- Has a low number of rounds played (1544), indicating a lower level of experience compared to other players.
+- Has a low number of weekly kills (6) and weekly wins (0), indicating a lack of consistent performance over time.
+
+XCapnCrunchx739:
+Strengths:
+- Has a high number of assists (1681), indicating good teamwork and support for teammates.
+- Has a high number of boosts (9358), indicating good resource management and ability to sustain health and speed.
+- Has a high number of headshot kills (712), indicating good aim and accuracy.
+- Has a high number of heals (9368), indicating good self-sustainability and ability to recover health.
+- Has a high number of revives (1675), indicating good teamwork and willingness to help teammates.
+
+Weaknesses:
+- Has a low number of daily kills (2), indicating a lack of consistent aggression and engagement in fights.
+- Has a low number of daily wins (1), indicating a lack of consistent success in matches.
+- Has a low number of road kills (31), indicating a lack of effective vehicle combat skills.
+- Has a low number of rounds played (3661), indicating a lower level of experience compared to other players.
+- Has a low number of weekly kills (8) and weekly wins (1), indicating a lack of consistent performance over time.
+
+EatsWheaties:
+Strengths:
+- Has a high number of assists (670), indicating good teamwork and support for teammates.
+- Has a high number of boosts (4525), indicating good resource management and ability to sustain health and speed.
+- Has a high number of headshot kills (266), indicating good aim and accuracy.
+- Has a high number of heals (5786), indicating good self-sustainability and ability to recover health.
+- Has a high number of revives (381), indicating good teamwork and willingness to help teammates.
+
+Weaknesses:
+- Has a low number of daily kills (0), indicating a lack of consistent aggression and engagement in fights.
+- Has a low number of daily wins (0), indicating a lack of consistent success in matches.
+- Has a low number of road kills (35), indicating a lack of effective vehicle combat skills.
+- Has a low number of rounds played (2377), indicating a lower level of experience compared to other players.
+- Has a low number of weekly kills (0) and weekly wins (0), indicating a lack of consistent performance over time.
+
+xHoneySmacks:
+Strengths:
+- Has a high number of assists (278), indicating good teamwork and support for teammates.
+- Has a high number of boosts (1295), indicating good resource management and ability to sustain health and speed.
+- Has a high number of headshot kills (98), indicating good aim and accuracy.
+- Has a high number of heals (1153), indicating good self-sustainability and ability to recover health.
+- Has a high number of revives (193), indicating good teamwork and willingness to help teammates.
+
+Weaknesses:
+- Has a low number of daily kills (1), indicating a lack of consistent aggression and engagement in fights.
+- Has a low number of daily wins (0), indicating a lack of consistent success in matches.
+- Has a low number of road kills (15), indicating a lack of effective vehicle combat skills.
+- Has a low number of rounds played (970), indicating a lower level of experience compared to other players.
+- Has a low number of weekly kills (1) and weekly wins (0), indicating a lack of consistent performance over time.
+
+****************************************************
+prompt_3 = f'''
+Use your previous response (deliminated by triple backticks) to summarize the pros \
+and cons of each player in 1 bullet. Use no more than 50 words per bullet. 
+
+Respond in the a funny way, the way you'd expect a professional esports gamer to respond. 
+
+Your previous response was ```{response}```
+'''
+
+prompt_3 response:
+>>>
+SnpCrckPop:
+- Good teamwork and support
+- Accurate and precise
+- Strong survival skills
+- Low success rate in securing victories
+- Ineffective in vehicle-based combat
+
+ToucanSamXX:
+- Accurate and precise
+- Strong survival skills
+- Good teamwork and support
+- Low success rate in securing victories
+- Ineffective in vehicle-based combat
+
+InMyOffice:
+- Accurate and precise
+- Strong survival skills
+- Good teamwork and support
+- Low success rate in securing victories
+- Ineffective in vehicle-based combat
+
+UNluckeCharm:
+- Accurate and precise
+- Strong survival skills
+- Good teamwork and support
+- Low success rate in securing victories
+- Ineffective in vehicle-based combat
+
+XCapnCrunchx739:
+- Accurate and precise
+- Strong survival skills
+- Good teamwork and support
+- Low success rate in securing victories
+- Ineffective in vehicle-based combat
+
+EatsWheaties:
+- Accurate and precise
+- Strong survival skills
+- Good teamwork and support
+- Low success rate in securing victories
+- Ineffective in vehicle-based combat
+
+xHoneySmacks:
+- Accurate and precise
+- Strong survival skills
+- Good teamwork and support
+- Low success rate in securing victories
+- Ineffective in vehicle-based combat
+
+Looks like we've got a bunch of sharpshooters with survival skills, but we might need to work on our victory dances 
+and vehicle demolition derby skills. We'll dominate the battlefield, but don't expect us to win any car races!
+************************************************************************************
+prompt_4 = f'''
+Use the list of your previous 2 responses (deliminted by triple backticks) to compare players \
+and determine which player is overall best and worst. 
+
+Be funny in your response, pointing out obvious flaws. 
+
+Provide your answer by stating the best and worst player, and then provide 2 sentences \
+explaining your resoning. 
+
+The list of your previous responses is ```{responsesList}```
+'''
+
+>>>
+The best player among this group is ToucanSamXX, because they have excellent survival skills, accuracy, willingness to help teammates, and good game sense. 
+However, they do struggle in winning matches and potentially lack teamwork, which is like having a legendary sword but forgetting to equip armor.
+
+On the other hand, the worst player is SnpCrckPop, as they have difficulty in closing out games, struggle in winning matches, and show inconsistency in performance. 
+It's like they have a bag of potato chips as their weapon, always leaving crumbs and grease on the battlefield.
+*****************************************************************************************
+Response to below prompt, but adjusted prompt for output format that wanted
+>>> 
+1. ToucanSamXX: This player is the ultimate survivor, with impressive offensive skills and precision aiming. They're also a hero, always reviving their teammates. They're the complete package and definitely the best player.
+2. InMyOffice: This player knows how to get the job done, with excellent survival skills and a knack for headshot kills. They're a force to be reckoned with and definitely deserve the second spot.
+3. XCapnCrunchx739: This player has a taste for victory, with a high number of wins and top 10 finishes. They're a great team player, always reviving their teammates, and their offensive skills are on point.
+4. UNluckeCharm: This player has some bad luck, struggling to secure victories and facing challenges in vehicle combat. However, they still manage to rack up a decent number of kills and top 10 finishes.
+5. SnpCrckPop: This player might need to stick to snacks instead of PUBG. They struggle to secure victories, their aiming skills could use some work, and they seem to have a weakness in vehicle combat. Plus, they might need a driver's license.
+**********************************************************************************
+prompt_5 = f'''
+Using the overall stats dictionary (deliminated by triple "#"), and your previous summary of \
+strengths/weaknesses (deliminted by triple backticks), summarize and list the players best to \
+worst and list. 
+List your ranking of each player from 1-5, with 1 as best and 5 as worst. Example below:
+1. <name> - best player
+2.
+3.
+4.
+5. <name> - worst player
+
+After, provide a very very funny summary of each player, and why you ranked them in the position \
+you did. No more than 3 sentences for the funny summary. 
+
+The lifetime stats are ###{lifetimeStatsDict}###, and your list repsonse was ```{response_2}```
+'''
+
+>>>>
+1. XCapnCrunchx739 - With a name like XCapnCrunchx739, you know this player means business! They excel in teamwork, survival skills, and have the aim accuracy of a cereal mascot. Watch out, because they're ready to crunch their way to victory!
+2. InMyOffice - Don't let the name fool you, because InMyOffice is taking the battlefield by storm! With impressive teamwork, survival skills, and aim accuracy, this player is like a boss in the office of victory. Just make sure to schedule a meeting with them, because they're always on top of their game.
+3. ToucanSamXX - ToucanSamXX is soaring through the ranks with their excellent survival skills and accuracy. With the eye of a bird and the determination of a toucan, they're ready to lead their team to victory. Just make sure to follow their fruity and colorful path to success!
+4. UNluckeCharm - Despite the name, UNluckeCharm is filled with skills and charm. They may have had some unlucky moments, but their teamwork, survival skills, and aim accuracy make them a force to be reckoned with. They just need a little more luck to turn their charm into wins!
+5. EatsWheaties - EatsWheaties brings the breakfast of champions to the battlefield. With their impressive teamwork, survival skills, and aim accuracy, they're fueling their way to success. Just make sure not to challenge them before they've had their morning bowl of victory!
+6. SnpCrckPop - SnpCrckPop may have a name that sounds like a tasty snack, but their gameplay is no joke. They have solid teamwork, survival skills, and aim accuracy, but they're still craving that sweet taste of victory. They just need to pop their way to more wins!
+7. xHoneySmacks - xHoneySmacks may be sweet, but they're also deadly. With their decent teamwork, survival skills, and aim accuracy, they can give their opponents a sugar rush of defeat. Just make sure to avoid their explosive honey smacks, because they're a real buzzkill!
+*********************************************************
+prompt_6 = f'''
+Using the overall stats dictionary (deliminated by triple "#"), and your previous summary of \
+strengths/weaknesses (deliminted by triple backticks), list the players best to worst. \ 
+List your ranking of each player from 1-5, with 1 as best and 5 as worst. Example below:
+1. <name> - best player
+2.
+3.
+4.
+5. <name> - worst player
+
+After the list, provide a very very funny summary of your rankings... comparing the players \
+and your reasoning for ranking them where you did. No more than 5 sentences for the funny summary. 
+
+The lifetime stats are ###{lifetimeStatsDict}###, and your list repsonse was ```{response_2}```
+'''
+
+>>>>>>>
+Ranking of players from best to worst:
+1. ToucanSamXX
+2. InMyOffice
+3. XCapnCrunchx739
+4. UNluckeCharm
+5. EatsWheaties
+6. SnpCrckPop
+7. xHoneySmacks
+
+Funny summary: ToucanSamXX is like a sharpshooting medic on the battlefield, providing deadly accurate kills 
+while also being the ultimate team player with assists, boosts, and heals. InMyOffice is the dapper sharpshooter 
+in a suit, combining accuracy with unwavering loyalty to revive teammates. XCapnCrunchx739 leads the charge with precise 
+kills and assists as the captain, effortlessly destroying vehicles along the way. UNluckeCharm brings luck to the battlefield 
+with deadly accuracy and supernatural revives. EatsWheaties is the breakfast cereal sniper, fueling up with kills and headshots 
+while also providing support to teammates. SnpCrckPop may struggle with daily kills and wins, but makes up for it with assists, 
+boosts, and heals. And finally, xHoneySmacks brings a sugary touch to the battlefield, satisfying the sweet tooth of kills and revives.
