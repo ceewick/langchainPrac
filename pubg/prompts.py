@@ -137,9 +137,9 @@ List your ranking of each player from 1-5, with 1 as best and 5 as worst. Exampl
 5. <name> - worst player
 
 After the list, provide a very very funny summary of your rankings... comparing the players \
-and your reasoning for ranking them where you did. No more than 5 sentences for the funny summary. 
+and your reasoning for ranking them where you did. No more than 3 sentences for the funny summary. 
 
-The lifetime stats are ###{lifetimeStatsDict}###, and your list repsonse was ```{response_2}```
+The lifetime stats are ###{lifetimeStatsDict}###, and your pro/con response was ```{response_2}```
 '''
 
 response_5 = get_completion_wild(prompt_6)

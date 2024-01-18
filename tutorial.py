@@ -24,9 +24,9 @@ from langchain_core.output_parsers import StrOutputParser
 # print(response)
 
 ### Retrieval (import WebBaseLoader)
-from langchain_community.document_loaders ity.vectorstores import DocArrayInMemorySearch
+from langchain_community.document_loaders import WebBaseLoader
 from langchain.text_splitter import RecursiveCharacterTextSplittermport WebBaseLoader
-from langchain_communi
+from langchain_community.vectorstores import DocArrayInMemorySearch
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.documents import Document
 from langchain.chains import create_retrieval_chain
