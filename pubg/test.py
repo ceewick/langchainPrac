@@ -17,6 +17,7 @@ idNameDict = {
     'xHoneySmacks':"account.6654c42c122444c8be1e2f9e459d071c"
     }
 
+# print(idNameDict.values())
 # pprint(jData)
 # print(type(jData)) ## <class 'dict'>
 # print(help(jData))
@@ -26,23 +27,23 @@ playerId = {}
 lifetimeStatsDict = {}
 lifetimeStatsNameDict = {}
 
-# pprint(jData['data'])
-data = jData['data']
-for i in data:
-    dataDict = i
-    playerDict = dataDict['relationships']['player']['data']
-    # playerId['id'] = playerDict.get('id')
-    dataDict = dataDict['attributes']['gameModeStats']['squad']
-    dataDict['id'] = playerDict.get('id')
-    for name,id in idNameDict.items():
-        if id in dataDict['id']:
-            lifetimeStatsNameDict[name] = dataDict
-        else:
-            continue
-    lifetimeStatsDict.update(lifetimeStatsNameDict)
+## Transform JSON to desired results in Dict format
+# data = jData['data']
+# for i in data:
+#     dataDict = i
+#     playerDict = dataDict['relationships']['player']['data']
+#     # playerId['id'] = playerDict.get('id')
+#     dataDict = dataDict['attributes']['gameModeStats']['squad']
+#     dataDict['id'] = playerDict.get('id')
+#     for name,id in idNameDict.items():
+#         if id in dataDict['id']:
+#             lifetimeStatsNameDict[name] = dataDict
+#         else:
+#             continue
+#     lifetimeStatsDict.update(lifetimeStatsNameDict)
 
-# pprint(lifetimeStatsDict)
+# # pprint(lifetimeStatsDict)
 
-df=pd.DataFrame(lifetimeStatsDict)#['name'])
+# df=pd.DataFrame(lifetimeStatsDict)#['name'])
 # df.to_csv('lifetimeStats.csv', sep=',')
 # pprint(df)

@@ -154,7 +154,7 @@ The lifetime stats are ###{lifetimeStatsDict}###, and your list repsonse was ```
 '''
 
 response_5 = get_completion(prompt_5)
-print(response_5)
+# print(response_5)
 
 # # prompt_5 = f'''
 # # Using the overall stats dictionary (deliminated by triple "#"), and your previous summary of \
